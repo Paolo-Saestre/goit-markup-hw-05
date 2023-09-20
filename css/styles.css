@@ -716,14 +716,15 @@ img {
 }
 .close-btn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 24px;
+  right: 24px;
   width: 24px;
   height: 24px;
   background-color: var(--cornflower);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+  padding bottom: 12px;
 }
 .close-btn:hover {
   background-color: var(--secondarycolor);
