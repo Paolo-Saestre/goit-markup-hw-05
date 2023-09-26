@@ -7,6 +7,7 @@
   --link-active: #404bbf;
   --light: #f4f4fd;
   --cornflower: #e7e9fc;
+  --dairy: #fcfcfc
   --button-shadow: rgba(0, 0, 0, 0.15);
   --portfolio-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -169,7 +170,7 @@ img {
   margin: auto;
   margin-bottom: 156px;
   white-space: nowrap;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--standard-animation);
 }
 .order-button:hover,
 .order-button:focus {
@@ -215,6 +216,7 @@ img {
   justify-content: center;
   background-color: #4d5ae5;
   fill: white;
+  transition: background-color var(--standard-animation);
 }
 
 .social-icon:hover {
@@ -509,12 +511,12 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   padding: 16px 32px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon:hover,
 .customer-icon:focus {
   fill: #404bbf;
   border-color: #404bbf;
+  transition: var(--standard-animation);
 }
 .footer-text {
   color: var(--cloud, #f4f4fd);
@@ -546,13 +548,13 @@ img {
   gap: 24px;
   border-radius: 50%;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-icons > li:hover,
 .footer-social-icons > li:focus {
-  background-color: #31d0aa;
-  fill: #31d0aa;
+  background-color: var(--success);
+  fill: var(--success);
+  transition: var(--standard-animation);
 }
 
 .social-icon-footer {
@@ -709,16 +711,13 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
+  width: 408px;
   min-height: 584px;
   border-radius: 4px;
-  background: var(--DAIRY, #fcfcfc);
+  background: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  background-color: rgba(46, 47, 66, 0.4);
-  opacity: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: var(--dairy);
 }
 .close-btn {
   position: absolute;
@@ -738,8 +737,7 @@ img {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .close-btn:hover .close-btn:active {
-  background-color: var(--secondarycolor);
-  color: #fff;
+  fill: #fff;
   border: none;
 }
 .is-hidden {
