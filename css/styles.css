@@ -596,6 +596,7 @@ img {
   font-weight: 500;
   letter-spacing: 0.64px;
   background: var(--cloud, #f4f4fd);
+  transition: color var(--standard-animation), background-color var(--standard-animation), border-color var(--standard-animation), box-shadow var(--standard-animation);
 }
 
 .button-list-portfolio:hover {
@@ -642,9 +643,10 @@ img {
   align-items: flex-start;
   gap: 32px;
   flex-shrink: 0;
+  transition: box-shadow var(--standard-animation);
 }
 
-.cards-portfolio:hover {
+.cards-portfolio:hover .cards-portfolio:active {
   display: flex;
   flex-wrap: wrap;
   width: 360px;
@@ -654,6 +656,7 @@ img {
   gap: 32px;
   flex-shrink: 0;
   box-shadow: var(--portfolio-shadow);
+  transform: translateY(0);
 }
 .project-names {
   display: flex;
