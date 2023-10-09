@@ -146,17 +146,15 @@ border-color: var(--link-active);
   position: absolute;
   left: 0;
   width: 100%;
-  gap: 20px;
-  bottom: -1px;
+  top: 46px;
   height: 4px;
   background-color: var(--link-active);
   border-radius: 2px;
   transform:scaleX(0);
-  transition: transform 0.25s ease-out;
+  transition: transform var(--standard-animation);
 }
 .hover-underline:hover::after {
   transform: scaleX(1);
-  transform-origin: bottom left;
 }
 
 .front-page {
@@ -774,7 +772,7 @@ border-color: var(--link-active);
   align-items: center;
   justify-content: center;
   top: 24px;
-  right: 24px;
+  right: 25px;
   width: 24px;
   height: 24px;
   padding: 0px;
