@@ -131,7 +131,6 @@ img {
 display: inline-block;
 width: 100%;
 gap: 20px;
-height: 4px;
 color: var(--link-active);
 border-color: var(--link-active);
 }
@@ -140,6 +139,7 @@ border-color: var(--link-active);
   position: absolute;
   left: 0;
   width: 100%;
+  bottom: -1px;
   top: 46px;
   height: 4px;
   background-color: var(--link-active);
